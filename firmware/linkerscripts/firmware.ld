@@ -91,7 +91,7 @@ SECTIONS
        *(.data*)
        . = ALIGN(4) ;
        _edata = . ;
-    } > SRAM_LOWER_BOTTOM AT>PROGRAM_FLASH
+    } > SRAM_UPPER AT>PROGRAM_FLASH
      
     /* MAIN DATA SECTION */
     .uninit_RESERVED : ALIGN(4)
