@@ -88,10 +88,11 @@ uint8_t g_UsbDeviceDescriptor[] = {
     USB_DEVICE_PROTOCOL,
     /* Maximum packet size for endpoint zero (only 8, 16, 32, or 64 are valid) */
     USB_CONTROL_MAX_PACKET_SIZE,
+    /* This VID/PID combination is from Microchip's CDC demo. The correct driver should automatically be loaded*/
     /* Vendor ID (assigned by the USB-IF) */
-    0xC9U, 0x1FU,
+    0xD8U, 0x04U,
     /* Product ID (assigned by the manufacturer) */
-    0x94, 0x00,
+    0x0A, 0x00,
     /* Device release number in binary-coded decimal */
     USB_SHORT_GET_LOW(USB_DEVICE_DEMO_BCD_VERSION), USB_SHORT_GET_HIGH(USB_DEVICE_DEMO_BCD_VERSION),
     /* Index of string descriptor describing manufacturer */
